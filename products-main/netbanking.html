@@ -1,0 +1,56 @@
+<!DOC TYPE html>
+<html>
+<head>
+<title>Net Banking</title>
+<style>
+div.back{
+position: relative;
+ top: 100px;
+
+}
+div.select{
+position: relative;
+ top: 100px;
+
+}
+div.proceed{
+position: relative;
+ top: 100px;
+
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<div class="select" align="center">
+<h1></span>Select your Bank <span></h1>
+                     
+                    <select name="Banks" id="required">
+						<option value =""><--select--></option>
+                        <option value ="">SBI</option>
+                        <option value="">HDFC</option>
+                        <option value="">AXIS</option>
+                        <option value="">ICICI</option>
+                    </select>
+</div>
+</nav><br/>
+<div  class="proceed" align="center">
+            	<input type="submit"  id="back" value="Proceed" onclick="myfunction()"></input>
+      
+            </div><br/>
+<div class="back" align="center">
+            	<input type="submit"  id="back" value="Back" onclick="myfunction()"></input>
+      
+            </div>
+<script>
+function myfunction()
+{
+   
+    window.location.href = "paymentMethods.html";
+}
+
+</script>
+</body>
+</html>

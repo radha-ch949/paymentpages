@@ -1,0 +1,202 @@
+<html>
+<head>
+<style>
+
+    
+
+
+
+body {
+  background-image: url("car9.jpeg");
+    display: flex;
+    justify-content: center;
+}
+
+
+
+form {
+    >* {
+        margin-top: 10px;
+    }
+
+    }
+
+.name {
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+
+    div {
+        width: 5%;
+    }
+}
+
+.address-info {
+    display: flex;
+    justify-content: space-between;
+
+    div {
+        width: 30%;
+    }
+}
+
+.cc-info {
+    display: flex;
+    justify-content: space-between;
+
+    div {
+        width: 45%;
+    }
+}
+
+.btns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    button {
+        margin: 3px 0;
+        height: 30px;
+        width: 40%;
+        color: #cfc9e1;
+        background-color: #4a3b76;
+        text-transform: uppercase;
+        border: 0;
+        border-radius: .3rem;
+        letter-spacing: 1px;
+
+     
+        }
+    }
+}
+
+@media (max-width: 736px) {
+    .wrapper {
+        width: 100%;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .btns {
+        align-items: center;
+
+        button {
+            width: 50%;
+        }
+    }
+    .name,
+    .address-info,
+    .cc-info {
+        flex-direction: column;
+                justify-content: space-evenly;
+
+        div {
+            align-items: center;
+            flex-direction: column;
+            display: flex;
+        }
+    }
+
+    .street,
+    .cc-num {
+        text-align: center;
+    }
+
+    input {
+        margin: px 0;
+        min-height: 30px;
+    }
+
+</style>
+</head>
+
+<body>
+<div class="wrapper">
+    <div class="container">
+        <form action="">
+            <h1>
+                <i class="fas fa-shipping-fast"></i>
+                Shipping Details
+            </h1>
+            <div class="name">
+                <div>
+                    <label for="f-name">First</label>
+                    <input type="text" placeholder="Enter first name" autocomplete="cc-name" maxlength="30" pattern="[\p{L} \-\.]+" required>
+                </div>
+                <div>
+                    <label for="l-name">Last</label>
+                    <input type="text" placeholder="Enter last name" autocomplete="cc-name" maxlength="30" pattern="[\p{L} \-\.]+" required>
+                </div>
+            </div><br/>
+            <div class="street">
+                <label for="name">Street</label>
+                <input type="text" placeholder="address" autocomplete="cc-name" maxlength="30" pattern="[\p{L} \-\.]+" required>
+            </div><br/>
+            <div class="address-info">
+           
+                    <label for="city">City</label>
+                    <input type="text" placeholder="city" autocomplete="cc-name" maxlength="30" pattern="[\p{L} \-\.]+" required>
+               
+<br/>
+                <div>
+                    <label for="state">State</label>
+                    <input type="text" placeholder="state" autocomplete="cc-name" maxlength="30" pattern="[\p{L} \-\.]+" required>
+                </div>
+<br/>
+                <div>
+                    <label for="zip">Zip</label>
+                    <input type="text" placeholder="zip">
+                </div>
+            </div>
+<br/>		
+			<div class="cc-num">
+                <div>
+			<h1>Payment Information</h1>
+                    <label for="card-num">Name on Card</label>
+                    <input type="text" name="Name" placeholder="Enter name" autocomplete="cc-name" maxlength="30" pattern="[\p{L} \-\.]+" required>
+                </div>
+<br/>
+            <div class="cc-num">
+                <label for="card-num">Credit Card No.</label>
+                <input type="text" name="card-num" placeholder="1111-2222-3333-4444" inputmode="numeric" autocomplete="cc-number" maxlength="16" pattern="[\d ]{10,30}" required>
+            </div>
+<br/>
+            <div class="cc-info">
+                <div>
+                    <label for="card-num">Exp</label>
+                    <input type="text" name="expire" placeholder="MM/YY" maxlength="5" autocomplete="cc-exp" required>
+                </div>
+                <div>
+                    <label for="card-num">CCV</label>
+                    <input type="text" name="security"  placeholder="***" inputmode="numeric" maxlength="3" autocomplete="cc-csc" required>
+                </div>
+            </div>
+<br/><br/>
+<div align="center">
+            <input type="submit" name=" " value="Pay" onclick="myfunction1()"> <br/><br/>
+                <br/>
+           
+            	<input type="submit" name="" id="back" value="Back" onclick="myfunction1()">
+      
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+
+<script>
+function myfunction1()
+{
+   
+    window.location.href = "paymentMethods.html";
+}
+function myfunction1()
+{
+   
+    window.location.href = "paymentMethods.html";
+}
+</script>
+
+</html>
